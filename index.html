@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenneth Barrera</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<nav>
+        <div src="#" class="logo"></div>
+        <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="menu-icons fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="menu-icons fa-solid fa-bars" onclick="openMenu()"></i>
+</nav>
+<div id="header">
+        <div class="container-box">
+            <video autoplay muted loop onloadstart="this.playbackRate = 0.65;" id="myVideo">
+                <source src="images/space.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            <div class=" mt-5">
+                <div class="row">
+                <div class="col-12">
+                    <div class="detel text-center ">
+                        <p class="portafolio-text">Welcome to my personal portafolio website</p>
+                        <div class="typingText">
+                        <h1 id="typed-text">I am <span class="auto-type"></span></h1>
+                        </div>
+                        <p class="mt-5">
+                        <button type="button" class="btn btn-dark btn-rounded btn-icon" onclick="window.open('https://github.com/KennethBarreraDev', '_blank')">
+                            <i class="fa-brands fa-github fa-2xl icons"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark btn-rounded btn-icon" onclick="window.open('https://www.linkedin.com/in/kenneth-osvaldo-barrera-orozco-623578250/', '_blank')">
+                            <i class="fa-brands fa-linkedin fa-2xl icons"></i>
+                        </button>
+                        </p>
+                        <a href="files/KENNETH-OSVALDO-BARRERA-OROZCO-CV.pdf" download class="CV-Button">DOWNLOAD CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--About section-->
+<section id="about">
+   <div class="container-box">
+        <div class="about-row">
+            <div class="about-col-1">
+                <img src="images/kenneth.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Hello 👋, my name is Kenneth Osvaldo Barrera Orozco </p>
+                <p>I am a Frontend and Backend developer with experience building websites and mobile applications. I specialize in Javascript, Flutter and Firebase, with which I have created professional projects.</p>
+                <div class="tab-titles">
+                   <p class="tab-links active-link" onclick="openTab('skills')">Skills</p> 
+                   <p class="tab-links" onclick="openTab('education')">Education</p> 
+                   <p class="tab-links" onclick="openTab('awards')">Awards and honours </p> 
+                </div>
+                <div class="tab-contents active-tab skills section-bg" id="skills">            
+                    <div class="row skills-content">
+
+                        <div class="col-lg-6" data-aos="fade-up">
+            
+                        <div class="progress">
+                            <span class="skill">HTML <i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+            
+                        <div class="progress">
+                            <span class="skill">CSS <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+            
+                        <div class="progress">
+                            <span class="skill">JavaScript <i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+            
+                        </div>
+            
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            
+                        <div class="progress">
+                            <span class="skill">Node js <i class="val">70%</i></span>
+                            <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+            
+                        <div class="progress">
+                            <span class="skill">Flutter <i class="val">95%</i></span>
+                            <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+            
+                        <div class="progress">
+                            <span class="skill">Firebase<i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+            
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2015 - 2018</span><br>Programming student  at "Centro de Estudios Tecnológicos, Industriales y de Servicios N. 120"</li> 
+                       <li><span>2018 - current</span><br>Computer systems engineering student at "Instituto Tecnologico de Morelia"</li> 
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="awards">
+                    <ul>
+                        <li><i class="fa-solid fa-award fa-lg" style="color: #008cff; padding-right: 10px;"></i> 3rd place - Hackathon Innovation Fest, Morelia Mich</li> 
+                        <li><i class="fa-solid fa-award fa-lg" style="color: #008cff; padding-right: 10px;"></i> 3rd place - "Concurso de Robótica y Prototipos", Morelia Mic</li>   
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </div> 
+</section>
+
+
+<!--Portafolio-->
+<section id="portafolio">
+ <div class="container">
+    <h1 class="sub-title">My work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/logo_tutaxi.png">
+            <div class="layer">
+                <h3>Tu Taxi Morelia</h3>
+                <p>
+                    Mobile application for taxi services in Michoacán, Mexico
+                </p>
+                <a href="projects/tu_taxi.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/logo_dolphin.png">
+            <div class="layer">
+                <h3>Dolphin</h3>
+                <p>
+                    Mobile language learning application, based on voice detection to improve pronunciation
+                </p>
+                <a href="projects/dolphin.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/logo_pse.jpg">
+            <div class="layer">
+                <h3>PSE</h3>
+                <p>
+                    Web application for monitoring services and grades of students of the Faculty of Electrical Engineering of the UMSH
+                </p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn-see-more">See more</a>
+ </div>
+</section>
+
+<!--Contact-->
+<footer id="contact">
+    <div class="container">
+        <div class="about-row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1> 
+                <p><i class="fa-solid fa-envelope"></i>kennethbarreradev@gmail.com</p>   
+                <p><i class="fa-solid fa-phone"></i>443-650-8954</p>  
+                <p><i class="fa-brands fa-whatsapp"></i>443-650-8954</p>         
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="7" placeholder="Write a message..."></textarea>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+                <span id="msg-successful"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!--TYPED.JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: [" Kenneth Barrera ", " a web developer ", " a mobile developer "],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+        })
+    </script>
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/fe7b30889a.js" crossorigin="anonymous"></script>
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links")
+        var tabContents = document.getElementsByClassName("tab-contents")
+
+        function openTab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link")
+            }
+
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sideMenu = document.getElementById("sideMenu")
+
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzQHZb6ExAUVJqyw3SCTAWBZ0gHLuFzibni_1fYEmy7XvZ4gJgbJN-tiLsDxmjLhW5L3w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg-successful");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000
+            )
+            form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>

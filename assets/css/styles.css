@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+}
+
+.container-box{
+   padding: 10px 10%; 
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: white;
+    font-size: 18px;
+    position:  relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #008cff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+.auto-type{
+    color: #2e9ed1;
+}
+
+.portafolio-text{
+    font-size: 30px;
+}
+
+.CV-Button{
+    padding: 10px;
+    background: #008cff;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+
+}
+
+.CV-Button:hover{
+    color: black;
+}
+
+.btn.btn-rounded {
+    background-color: black !important;
+    border-color: black !important;
+}  
+
+
+
+/*********************About*********************/
+#about{
+    padding: 80px 0;
+    background-color: #0c0d0f;
+    color: #ababab;
+}
+
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+  }
+  
+  .skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;    
+    color: white;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: #dce8f8;
+    height: 10px;
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #149ddd;
+  }
+  
+
+.about-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #008cff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+
+.tab-contents ul li{
+    list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding-bottom:15px;
+}
+
+.tab-contents ul{
+    list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+
+.tab-contents ul li span{
+    color: #008cff;
+    font-size: 20px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/*---------Portafolio---------*/
+#portafolio{
+    padding: 50px 0;
+    background-color: #0c0d0f;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #404044);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #10111d;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn-see-more{
+    display: block;
+    margin: 50px auto;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid #008cff;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-see-more:hover{
+    color: white;
+}
+
+
+/*********************Contact*********************/
+
+#contact{
+    padding: 80px 0;
+    background-color: #0c0d0f;
+    color: #ababab;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #008cff;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.submit-button{
+    display: block;
+    background-color: #0c0d0f;
+    color: white;   
+    margin: 20px auto;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid #008cff;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+ 
+}
+
+
+/*********************Responsivity*********************/
+nav .menu-icons{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .portafolio-text{
+        margin-top: 30%;
+        font-size: 30px;
+    }   
+    #typed-text{
+        font-size: 20px;
+    } 
+    .auto-type{
+        font-size: 20px;
+    } 
+    
+    nav .menu-icons{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #262626;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .menu-icons{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title{
+     font-size: 40px;   
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-1{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+}
+
+#msg-successful{
+    color: green;
+    margin-top: 30px;
+    display: block;
+}
+
+
+
